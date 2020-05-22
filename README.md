@@ -13,7 +13,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |body|text||
-|image|text||
+|image|string||
 |group|reference|null: false, foreign_key: true|
 |user|reference|null: false, foreign_key: true|
 ### Asssociation
@@ -23,7 +23,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
+|name|string|null: false|
 ### Association
 - has_many :users, through: :groups_users
 - has_many :messages
