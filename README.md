@@ -14,8 +14,8 @@
 |------|----|-------|
 |body|text||
 |image|text||
-|group_id|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
+|group_id|reference|null: false, foreign_key: true|
+|user_id|reference|null: false, foreign_key: true|
 ### Asssociation
 - belongs_to :user
 - belongs_to :group
