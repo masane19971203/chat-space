@@ -13,7 +13,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |body|text||
-|image|string||
+|image|text||
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 ### Asssociation
