@@ -6,8 +6,8 @@
 |password|string|null: false|
 |name|string|null: false|
 ### Association
-- has_many :massages
-- has_many :groups
+- has_many :massages, though: :groups_users
+- has_many :groups, though :groups_users
 
 ## messagesテーブル
 |Column|Type|Options|
