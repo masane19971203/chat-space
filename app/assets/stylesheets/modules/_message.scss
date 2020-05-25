@@ -7,7 +7,6 @@
   .side-bar{
     background-color: #253141;
     width: 300px;
-    // padding: 0 20px;
     &__user-name{
       height: 100px;
       display: flex;
@@ -43,7 +42,6 @@
       padding: 20px 20px 0px;
       .lists__title {
         font-size: 15px;
-        // padding-top: 20px;
         margin-bottom: 5px;
       }
       .messages {
