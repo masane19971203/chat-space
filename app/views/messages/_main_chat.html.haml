@@ -1,0 +1,43 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info__left-box
+      .group-name
+        test
+      .members-name
+        member:永峯
+    .chat-main__group-info__right-box
+      = link_to "#", class: "edit-btn" do
+        Edit
+  .chat-main__message-list
+    .chat-main__message-list__top
+      .user-name
+        永峯
+      .update-time
+        2020/05/25
+    .chat-main__message-list__text
+      おはよう
+    .chat-main__message-list__top
+      .user-name
+        永峯
+      .update-time
+        2020/05/25
+    .chat-main__message-list__text
+      こんにちは
+
+
+  .chat-main__message-form
+    .chat-main__message-form__area
+      .two-boxes
+        .message-box
+          %input{type: "text", placeholder: "type a message", class: "message-box"}
+        .img-box
+          %label{class: "img-btn"} 
+            =icon('fas', 'image')
+            .under-btn
+              %input{type: "file"}
+
+      .send-btn
+        Send
+          
+
+
