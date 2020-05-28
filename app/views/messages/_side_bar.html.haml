@@ -11,10 +11,8 @@
             =icon('fas', 'cog')
   .side-bar__group-list
     - current_user.groups.each do |group|
-      = link_to '#' do
+      = link_to group_messages_path(group) do
         .lists__title
           = group.name
         .messages
-          まだメッセージがありません
-          <%= %>
-     
+          = group.show_last_message
