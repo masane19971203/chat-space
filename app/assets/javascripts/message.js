@@ -15,6 +15,7 @@ $(function() {
           insertHTML += buildHTML(message)
         });
         $('.chat-main__message-list').append(insertHTML);
+        $('.chat-main__message-list').animate({ scrollTop: $('.chat-main__message-list')[0].scrollHeight});
       }
     })
 
