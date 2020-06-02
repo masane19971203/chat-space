@@ -14,8 +14,7 @@ $(function() {
         $.each(messages, function(i, message) {
           insertHTML += buildHTML(message)
         });
-        $('.messages').append(insertHTML);
-        $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+        $('.chat-main__message-list').append(insertHTML);
       }
     })
 
@@ -26,8 +25,8 @@ $(function() {
   function buildHTML(message){
     if ( message.image ) {
       var html =
-       `<div class="message">
-          <div class="chat-main__message-list__top" data-message-id=${message.id}>
+       `<div class="message" data-message-id=${message.id}>
+          <div class="chat-main__message-list__top">
             <div class="user-name">
               ${message.user_name}
             </div>
