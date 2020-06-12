@@ -12,7 +12,7 @@
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text||
+|content|text||
 |image|string||
 |group|reference|null: false, foreign_key: true|
 |user|reference|null: false, foreign_key: true|
